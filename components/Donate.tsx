@@ -28,9 +28,7 @@ const Donate = ({ title, cardNumber, phone, name }: DonateProps) => {
           <p className="text-gray-600 dark:text-gray-300">
             {`Телефон відповідального: ${phone} (${name})`}
           </p>
-          <p className="text-gray-600 dark:text-gray-300">
-            {`Додати коментар "На служіння"`}
-          </p>
+
           <div className="flex justify-between">
             {" "}
             <p className="font-medium text-primary-600 dark:text-primary-500">
@@ -44,6 +42,9 @@ const Donate = ({ title, cardNumber, phone, name }: DonateProps) => {
               {copyStatus ? "Скопійовано!" : "Копіювати"}
             </button>
           </div>
+          <p className="text-gray-600 dark:text-gray-300">
+            {`При переказі пожертвування вказати мету переказу (або додати коментар) "На служіння"`}
+          </p>
         </div>
       </div>
     </div>
